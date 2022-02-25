@@ -16,22 +16,7 @@ export class BarrasComponent implements OnInit {
 
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
-    // We use these empty structures as placeholders for dynamic theming.
-    scales: {
-      x: {},
-      y: {
-        min: 10
-      }
-    },
-    plugins: {
-      legend: {
-        display: true,
-      },
-      datalabels: {
-        anchor: 'end',
-        align: 'end'
-      }
-    }
+  
   };
   public barChartType: ChartType = 'bar';
   public barChartPlugins = [
@@ -39,7 +24,7 @@ export class BarrasComponent implements OnInit {
   ];
 
   public barChartData: ChartData<'bar'> = {
-    labels: [ '2020', '2021', '2022', '2023', '2024', '2025', '2026' ,'2027'],
+    labels: [ '2020', '2021', '2022', '2023', '2024', '2025', '2026' ],
     datasets: [
       { data: [ 28, 48, 40, 19, 86, 27, 90 ], label: 'Series A' },
       { data: [ 8, 38, 70, 59, 66, 80, 100 ], label: 'Series B' }
