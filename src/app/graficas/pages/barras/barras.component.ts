@@ -16,8 +16,17 @@ export class BarrasComponent implements OnInit {
 
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
-  
+    //indexAxis: 'y'
   };
+  /*
+    posibles tipos de barras:
+      1.- bar
+      2.- bubble
+      3.- line
+      4.- pie
+      5.- radar
+      6.- doughnu
+  */
   public barChartType: ChartType = 'bar';
   public barChartPlugins = [
     DataLabelsPlugin
